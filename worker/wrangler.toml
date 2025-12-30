@@ -1,0 +1,11 @@
+name = "todolist-worker"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "todolist-db"
+database_id = "4d33f35e-7b41-46c6-b179-2d13137fb679"
+
+[vars]
+TOKEN_TTL_HOURS = "72"

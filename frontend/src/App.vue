@@ -80,7 +80,7 @@ const username = ref(localStorage.getItem("username") || "");
 const message = ref("");
 const messageType = ref("");
 
-const apiBase = import.meta.env.VITE_API_BASE || "http://localhost:8080";
+const apiBase = import.meta.env.VITE_API_BASE || "http://localhost:8787";
 
 const showMessage = (text, type) => {
   message.value = text;
