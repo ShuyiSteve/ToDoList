@@ -7,13 +7,13 @@
 
   <div class="page" :class="{ 'page--focused': token }">
     <section class="hero" :class="{ compact: token }">
-      <span v-if="!token" class="badge">Go + Vue + MySQL</span>
+      <span v-if="!token" class="badge">Vue + Workers + D1</span>
       <h1>Velvet List</h1>
       <p v-if="!token">
         A calm, focused space for your daily tasks. Register, sign in, and let your list sync
         across devices with a clean, modern workflow.
       </p>
-      <div v-if="!token" class="pill">Data lives in MySQL - Sessions expire automatically</div>
+      <div v-if="!token" class="pill">Data lives in D1 - Sessions expire automatically</div>
     </section>
 
     <section v-if="!token" class="panel">
