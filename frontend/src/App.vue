@@ -5,15 +5,15 @@
     <div class="blob three"></div>
   </div>
 
-  <div class="page">
-    <section class="hero">
-      <span class="badge">Go + Vue + MySQL</span>
+  <div class="page" :class="{ 'page--focused': token }">
+    <section class="hero" :class="{ compact: token }">
+      <span v-if="!token" class="badge">Go + Vue + MySQL</span>
       <h1>Velvet List</h1>
-      <p>
+      <p v-if="!token">
         A calm, focused space for your daily tasks. Register, sign in, and let your list sync
         across devices with a clean, modern workflow.
       </p>
-      <div class="pill">Data lives in MySQL - Sessions expire automatically</div>
+      <div v-if="!token" class="pill">Data lives in MySQL - Sessions expire automatically</div>
     </section>
 
     <section v-if="!token" class="panel">
